@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Hustle Connect: find the right skills for your next big idea, or help someone else bring theirs to life.">
+  <title>Hustle Connect | Your skills can take you further</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script><script src="pages.js" defer></script>
+</head>
+<body>
+<header class="navbar">
+  <a class="brand" href="index.html"><div class="logo"><h1>H</h1></div><p>hustle <span>connect</span></p></a>
+  <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+  <nav id="nav"><a href="index.html" class="active" aria-current="page">Home</a><a href="explore.html">Explore services</a><a href="about.html">About</a><a href="services.html">Services</a><a href="index.html#contact">Contact</a></nav>
+  <div class="nav-actions"><span id="user-chip" class="user-chip" hidden></span><button class="btn btn-blue" id="auth-btn">Login</button></div>
+</header>
+<main>
+
+  <section class="box" id="home">
+    <div id="cont1">
+      <h2 class="hero-heading">Your Skills Can<br>Take You<br><span>Further.</span></h2>
+      <h3>Find the right skills for your next big idea, or help someone else bring theirs to life.</h3>
+      <form class="box2" id="search-form">
+        <div class="cont3"><input type="text" id="search-input" placeholder="What are you looking for?" aria-label="Search services"></div>
+        <div class="cont4"><select id="search-category" aria-label="Category"></select></div>
+        <div class="cont5"><button class="btn btn-orange" type="submit">Search</button></div>
+      </form>
+      <div class="popular"><h4>Popular:</h4>
+        <div class="popular-links">
+          <a href="#directory" data-q="Web development">Web development</a>
+          <a href="#directory" data-q="Graphic design">Graphic design</a>
+          <a href="#directory" data-q="CV writing">CV writing</a>
+        </div>
+      </div>
+    </div>
+    <div id="cont6">
+      <img src="assets/hero-1.jpg" class="slider-image active" alt="Creative team collaborating">
+      <img src="assets/hero-2.jpg" class="slider-image" alt="Video editing in progress">
+      <img src="assets/hero-3.jpg" class="slider-image" alt="Digital marketing concept">
+      <img src="assets/hero-4.jpg" class="slider-image" alt="Two professionals planning a campaign">
+      <img src="assets/hero-5.jpg" class="slider-image" alt="Photographer at work">
+      <div class="dots" id="dots"></div>
+    </div>
+  </section>
+
+  <section class="stats reveal">
+    <div><strong>6</strong><span>Skill categories</span></div>
+    <div><strong>Free</strong><span>To list your service</span></div>
+    <div><strong>24/7</strong><span>Always open</span></div>
+    <div><strong>1</strong><span>Place for it all</span></div>
+  </section>
+
+  <section class="service-directory" id="directory">
+    <div class="directory-header">
+      <div class="header-text reveal">
+        <span class="section-label">EXPLORE THE DIRECTORY</span>
+        <h2>The right skills, right here.</h2>
+        <p>From the first sketch to the final detail, find a service that moves your idea forward.</p>
+        <p class="count" id="result-count" aria-live="polite"></p>
+      </div>
+    </div>
+    <div class="filters" id="filters"></div>
+    <div class="grid" id="service-grid"></div>
+    <div class="empty" id="empty" hidden>
+      <h3>No matching services yet</h3>
+      <p>Try another search or browse all services.</p>
+      <button class="btn btn-orange" id="show-all">Show all services</button>
+    </div>
+  </section>
+
+  <section class="section" id="how">
+    <div class="section-head reveal">
+      <span class="section-label">A SIMPLE WAY TO GET STARTED</span>
+      <h2>Make good things happen.</h2>
+      <p>Big or small, every great collaboration begins with finding the right fit.</p>
+    </div>
+    <div class="steps">
+      <article class="step reveal"><span>01</span><h3>Find your fit</h3><p>Browse categories and discover skills that match your project.</p></article>
+      <article class="step reveal"><span>02</span><h3>Start a conversation</h3><p>Get clear about what you need and the outcome you have in mind.</p></article>
+      <article class="step reveal"><span>03</span><h3>Make it happen</h3><p>Bring the right people together and turn a good idea into real work.</p></article>
+    </div>
+  </section>
+
+  <section class="section alt" id="why"><div class="section-head reveal"><span class="section-label">WHY HUSTLE CONNECT</span><h2>Everything in one place.</h2><p>Less searching, more doing.</p></div>
+<div class="features"><article class="feature reveal"><div class="ico">🔎</div><h3>Search by skill</h3><p>Filter six categories and find the right fit fast.</p></article>
+<article class="feature reveal"><div class="ico">📣</div><h3>Get seen</h3><p>List your service and let people find you.</p></article>
+<article class="feature reveal"><div class="ico">💬</div><h3>Talk directly</h3><p>Contact details are shared by the provider, no middleman.</p></article>
+<article class="feature reveal"><div class="ico">📱</div><h3>Mobile friendly</h3><p>Browse and post from any device.</p></article></div></section>
+<section class="section" id="more"><div class="section-head reveal"><span class="section-label">KEEP EXPLORING</span><h2>Take a closer look.</h2></div>
+<div class="features three"><a class="feature reveal" href="explore.html"><div class="ico">🧭</div><h3>Explore services</h3><p>Slide through every category and meet the talent.</p></a>
+<a class="feature reveal" href="services.html"><div class="ico">🛠️</div><h3>Services</h3><p>See what each service typically covers.</p></a>
+<a class="feature reveal" href="about.html"><div class="ico">💡</div><h3>About us</h3><p>Why we built Hustle Connect.</p></a></div></section>
+<section class="section alt" id="providers">
+    <div class="section-head reveal">
+      <span class="section-label">MEET THE TALENT</span>
+      <h2>People ready to work.</h2>
+      <p>Skilled people who have listed their services on Hustle Connect.</p>
+    </div>
+    <div class="grid providers" id="provider-grid"></div>
+  </section>
+
+  <section class="section" id="offer">
+    <div class="split">
+      <div class="reveal">
+        <span class="section-label">GOT A SKILL?</span>
+        <h2>There's room for what you do.</h2>
+        <p>List your service for free and let people who need your skills find you. You need an account to post.</p>
+      </div>
+      <form class="card-form reveal" id="offer-form">
+        <input name="title" placeholder="Service title (e.g. Logo & brand kit)" required maxlength="80">
+        <select name="category" id="offer-category" required></select>
+        <input name="price" placeholder="Starting price (e.g. ₦15,000)" maxlength="30">
+        <input name="contact" placeholder="How should people reach you? (phone / email)" required maxlength="80">
+        <textarea name="description" rows="3" placeholder="Describe what you offer" required maxlength="300"></textarea>
+        <button class="btn btn-orange" type="submit">Post my service</button>
+        <p class="form-msg" id="offer-msg" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="section alt" id="faq">
+    <div class="section-head reveal"><span class="section-label">GOOD TO KNOW</span><h2>Questions, answered.</h2></div>
+    <div class="faq reveal">
+      <details><summary>Is Hustle Connect free?</summary><p>Browsing and listing your service are free.</p></details>
+      <details><summary>How do I offer my skills?</summary><p>Create an account, then fill in the "Post my service" form above.</p></details>
+      <details><summary>How do I contact someone?</summary><p>Each listing shows the contact details the provider chose to share.</p></details>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="split">
+      <div class="reveal">
+        <span class="section-label">GET IN TOUCH</span>
+        <h2>Let's talk.</h2>
+        <p>Questions, feedback or partnership ideas? Send us a message and we'll get back to you.</p>
+      </div>
+      <form class="card-form reveal" id="contact-form">
+        <input name="name" placeholder="Your name" required maxlength="80">
+        <input name="email" type="email" placeholder="Your email" required maxlength="120">
+        <textarea name="message" rows="4" placeholder="Your message" required maxlength="1000"></textarea>
+        <button class="btn btn-orange" type="submit">Send message</button>
+        <p class="form-msg" id="contact-msg" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+<footer class="footer">
+  <span class="brand-text">hustle<span class="accent"> connect</span></span>
+  <span>Find the right skills. Get the job done.</span>
+  <a href="#home">Back to top ↑</a>
+</footer>
+<div class="modal" id="auth-modal" hidden>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+    <button class="modal-close" id="auth-close" aria-label="Close">×</button>
+    <h3 id="auth-title">Login</h3>
+    <form id="auth-form">
+      <input name="name" id="auth-name" placeholder="Full name" maxlength="80" hidden>
+      <input name="email" type="email" placeholder="Email" required maxlength="120">
+      <input name="password" type="password" placeholder="Password (min 8 characters)" required minlength="8" maxlength="100">
+      <button class="btn btn-blue" type="submit" id="auth-submit">Login</button>
+      <p class="form-msg" id="auth-msg" role="status"></p>
+    </form>
+    <p class="switch">
+      <span id="auth-switch-text">No account yet?</span>
+      <a href="#" id="auth-switch">Sign up</a>
+    </p>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Hustle Connect: find the right skills for your next big idea, or help someone else bring theirs to life.">
+  <title>About | Hustle Connect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script><script src="pages.js" defer></script>
+</head>
+<body>
+<header class="navbar">
+  <a class="brand" href="index.html"><div class="logo"><h1>H</h1></div><p>hustle <span>connect</span></p></a>
+  <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+  <nav id="nav"><a href="index.html">Home</a><a href="explore.html">Explore services</a><a href="about.html" class="active" aria-current="page">About</a><a href="services.html">Services</a><a href="index.html#contact">Contact</a></nav>
+  <div class="nav-actions"><span id="user-chip" class="user-chip" hidden></span><button class="btn btn-blue" id="auth-btn">Login</button></div>
+</header>
+<main>
+<section class="page-intro"><span class="section-label">ABOUT HUSTLE CONNECT</span><h1>Built for people who make things happen.</h1></section>
+<div class="slideshow" data-autoplay="7000" role="region" aria-roledescription="carousel" aria-label="Slideshow">
+  <div class="ss-track"><article class="ss-slide bleed-slide" style="background-image:url(assets/hero-1.jpg)" aria-label="1 of 5">
+        <div class="ss-text"><span class="section-label">OUR STORY</span><h2>Skills are everywhere. They just need to be found.</h2><p>Hustle Connect was built for people with real talent who haven’t had an easy way to be seen, and for people with real needs who haven’t known where to look.</p></div></article>
+<article class="ss-slide bleed-slide" style="background-image:url(assets/hero-2.jpg)" aria-label="2 of 5">
+        <div class="ss-text"><span class="section-label">OUR MISSION</span><h2>Put the right skill in the right hands.</h2><p>We make it simple to discover designers, developers, editors, writers, marketers and photographers, and just as simple to list what you do.</p></div></article>
+<article class="ss-slide bleed-slide" style="background-image:url(assets/hero-4.jpg)" aria-label="3 of 5">
+        <div class="ss-text"><span class="section-label">WHO IT’S FOR</span><h2>Hustlers, creators and doers.</h2><p>Students building a portfolio, freelancers growing a client base, small businesses that need a logo, a website or a CV, all in one place.</p></div></article>
+<article class="ss-slide bleed-slide" style="background-image:url(assets/hero-3.jpg)" aria-label="4 of 5">
+        <div class="ss-text"><span class="section-label">HOW WE WORK</span><h2>Find, talk, build.</h2><p>Browse by category, reach out directly using the contact details a provider shares, and agree the work between you.</p></div></article>
+<article class="ss-slide bleed-slide" style="background-image:url(assets/hero-5.jpg)" aria-label="5 of 5">
+        <div class="ss-text"><span class="section-label">JOIN THE HUSTLE</span><h2>Your skills can take you further.</h2><p>Create a free account and list your service, or start exploring who’s ready to work.</p><div class="ss-actions"><a class="btn btn-orange btn-link" href="index.html#offer">Offer your skills</a><a class="btn btn-line btn-link" href="explore.html">Explore services</a></div></div></article></div>
+  <button class="ss-arrow ss-prev" aria-label="Previous slide">‹</button><button class="ss-arrow ss-next" aria-label="Next slide">›</button>
+  <div class="ss-dots"></div></div>
+<section class="section"><div class="section-head reveal"><span class="section-label">WHAT WE BELIEVE</span><h2>Simple, fair and open.</h2></div>
+<div class="features"><article class="feature reveal"><div class="ico">🤝</div><h3>Direct connections</h3><p>You talk straight to the person doing the work.</p></article>
+<article class="feature reveal"><div class="ico">🆓</div><h3>Free to list</h3><p>Posting your service costs nothing.</p></article>
+<article class="feature reveal"><div class="ico">🎯</div><h3>Skill first</h3><p>Listings are organised by what people can do.</p></article>
+<article class="feature reveal"><div class="ico">📱</div><h3>Works everywhere</h3><p>Designed to work on phones, tablets and computers.</p></article></div></section>
+<section class="cta-band reveal"><div><h2>Ready to hustle?</h2><p>List your service for free, or find someone who can make your idea real.</p></div>
+<div class="ss-actions"><a class="btn btn-orange btn-link" href="index.html#offer">Offer your skills</a><a class="btn btn-blue btn-link" href="index.html#directory">Search services</a></div></section>
+</main>
+<footer class="footer">
+  <span class="brand-text">hustle<span class="accent"> connect</span></span>
+  <span>Find the right skills. Get the job done.</span>
+  <a href="#home">Back to top ↑</a>
+</footer>
+<div class="modal" id="auth-modal" hidden>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+    <button class="modal-close" id="auth-close" aria-label="Close">×</button>
+    <h3 id="auth-title">Login</h3>
+    <form id="auth-form">
+      <input name="name" id="auth-name" placeholder="Full name" maxlength="80" hidden>
+      <input name="email" type="email" placeholder="Email" required maxlength="120">
+      <input name="password" type="password" placeholder="Password (min 8 characters)" required minlength="8" maxlength="100">
+      <button class="btn btn-blue" type="submit" id="auth-submit">Login</button>
+      <p class="form-msg" id="auth-msg" role="status"></p>
+    </form>
+    <p class="switch">
+      <span id="auth-switch-text">No account yet?</span>
+      <a href="#" id="auth-switch">Sign up</a>
+    </p>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

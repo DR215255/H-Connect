@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: hustle-connect
+    runtime: node
+    plan: free
+    buildCommand: echo "nothing to build"
+    startCommand: node server/server.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: SECRET
+        generateValue: true

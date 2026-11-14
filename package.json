@@ -1,0 +1,9 @@
+{
+  "name": "hustle-connect",
+  "version": "1.0.0",
+  "description": "Hustle Connect: find the right skills, or offer yours.",
+  "main": "server/server.js",
+  "scripts": { "start": "node server/server.js" },
+  "engines": { "node": ">=18" },
+  "license": "MIT"
+}
