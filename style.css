@@ -9,7 +9,7 @@ img{max-width:100%;display:block}
 /* Navbar */
 .navbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:24px;padding:0 5%;height:80px;background:var(--cream);border-bottom:1px solid var(--line)}
 .brand{display:flex;align-items:center;gap:12px;font-size:20px;font-weight:600}
-.logo{width:35px;height:40px;border-radius:7px;background:url("assets/logo.jpg") center/cover}
+.logo{width:35px;height:40px;border-radius:7px;background:url("logo.jpg") center/cover}
 .logo h1{font-size:20px;color:#000;text-align:center;padding-top:7px}
 .brand p{font-size:20px;font-weight:600;color:#000}
 .brand p span{color:orange}

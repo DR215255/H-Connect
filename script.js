@@ -1,10 +1,17 @@
+/* ===== Config =====
+   API_BASE: leave '' when the Node backend serves this site itself.
+   If the frontend is on GitHub Pages and the backend is hosted elsewhere
+   (e.g. Render), put the backend URL here, like 'https://hustle-connect.onrender.com'.
+   If no backend can be reached, the site falls back to demo mode (data saved in this browser only). */
+const API_BASE = '';
+
 const SERVICES = [
-  { title: 'Graphics Design', category: 'Graphics Design', img: 'assets/graphics-design.jpg', desc: 'Logos, brand kits and polished graphics that give your ideas a clear identity.', kw: 'logo branding flyer illustration social media print graphic design' },
-  { title: 'Web Development', category: 'Web Development', img: 'assets/web-development.jpg', desc: 'Thoughtful websites and digital experiences, built around what you need to do.', kw: 'website frontend ecommerce landing page code web development' },
-  { title: 'Video Editing', category: 'Video Editing', img: 'assets/video-editing.jpg', desc: 'Bring your footage together with clean edits, motion and a story that flows.', kw: 'film reels motion content production youtube' },
-  { title: 'Typing and CV Writing', category: 'Typing and CV Writing', img: 'assets/typing-cv.jpg', desc: 'Clear, well-presented documents and CVs that put your experience into words.', kw: 'resume cv writing typing proofreading documents' },
-  { title: 'Digital Marketing', category: 'Digital Marketing', img: 'assets/digital-marketing.jpg', desc: 'Reach the right people with considered campaigns and engaging social content.', kw: 'social media strategy ads growth campaigns seo' },
-  { title: 'Photography', category: 'Photography', img: 'assets/photography.jpg', desc: 'Make your moments, products and projects stand out with compelling images.', kw: 'portrait product event photo camera shoot' },
+  { title: 'Graphics Design', category: 'Graphics Design', img: 'graphics-design.jpg', desc: 'Logos, brand kits and polished graphics that give your ideas a clear identity.', kw: 'logo branding flyer illustration social media print graphic design' },
+  { title: 'Web Development', category: 'Web Development', img: 'web-development.jpg', desc: 'Thoughtful websites and digital experiences, built around what you need to do.', kw: 'website frontend ecommerce landing page code web development' },
+  { title: 'Video Editing', category: 'Video Editing', img: 'video-editing.jpg', desc: 'Bring your footage together with clean edits, motion and a story that flows.', kw: 'film reels motion content production youtube' },
+  { title: 'Typing and CV Writing', category: 'Typing and CV Writing', img: 'typing-cv.jpg', desc: 'Clear, well-presented documents and CVs that put your experience into words.', kw: 'resume cv writing typing proofreading documents' },
+  { title: 'Digital Marketing', category: 'Digital Marketing', img: 'digital-marketing.jpg', desc: 'Reach the right people with considered campaigns and engaging social content.', kw: 'social media strategy ads growth campaigns seo' },
+  { title: 'Photography', category: 'Photography', img: 'photography.jpg', desc: 'Make your moments, products and projects stand out with compelling images.', kw: 'portrait product event photo camera shoot' },
 ];
 const CATEGORIES = SERVICES.map(s => s.category);
 const SAMPLE_PROVIDERS = [
